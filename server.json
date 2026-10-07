@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.esyurl/mcp",
+  "title": "esyURL",
+  "description": "Short links and trackable QR codes: editable after printing, device routing, scan stats.",
+  "version": "0.2.0",
+  "websiteUrl": "https://esyurl.fyi",
+  "repository": {
+    "url": "https://github.com/esyurl/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://esyurl.fyi/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer esy_... API key. An agent can get one itself: https://esyurl.fyi/auth.md",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
